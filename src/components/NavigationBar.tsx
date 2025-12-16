@@ -2,25 +2,15 @@ function NavigationBar() {
   return (
     <>
       <nav className="w-full">
-        <ul className="flex space-x-6 mx-auto px-4 max-w-2xl">
+        <ul className="flex text-md space-x-9 mx-auto px-4 max-w-2xl mt-8 mb-16 items-center ">
           <li>
-            <a className="text-blue-500 hover:text-blue-800" href="#">
+            <a className="navigation-bar" href="#">
               Home
             </a>
           </li>
           <li>
-            <a className="text-blue-500 hover:text-blue-800" href="#">
+            <a className="navigation-bar" href="#">
               Projects
-            </a>
-          </li>
-          <li>
-            <a className="text-blue-500 hover:text-blue-800" href="#">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a className="text-gray-400 cursor-not-allowed" href="#">
-              Disabled
             </a>
           </li>
         </ul>

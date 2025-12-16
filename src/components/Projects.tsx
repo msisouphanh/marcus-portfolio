@@ -1,3 +1,4 @@
+import { FiGlobe, FiGithub } from "react-icons/fi";
 import rawProjectsData from "../projects.json";
 
 interface Project {
@@ -9,45 +10,67 @@ interface Project {
   image: string;
 }
 
+const iconSize = 14 as number;
 const projectsData = rawProjectsData.slice(0, 2) as Project[];
 
 function Projects() {
   return (
     <>
       <div className="w-full">
-        <div className="max-w-2xl mx-auto px-4">
-          <h1 className="mt-8 mb-4 text-xl font-semibold">Projects</h1>
+        <div className="max-w-2xl mx-auto px-4 mb-18">
+          <div className="flex justify-between mt-18 mb-4">
+            <h1 className="font-semibold text-2xl dark:text-zinc-100">
+              Projects
+            </h1>
+            <a className="flex items-center">
+              <span className="text-md pt-2 dark:text-zinc-300">View More</span>
+            </a>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             {projectsData.map((item) => (
-              <div className="flex flex-col rounded-xl shadow-md border p-4">
-                <div className="h-40 bg-gray-200 rounded-lg mb-4">image</div>
-                <h1 key={item.name} className="text-lg font-semibold mb-2">
+              <div
+                className="flex flex-col rounded-xl shadow-md border p-4 transition-all duration-300 ease-out
+                hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/30"
+              >
+                <div className="h-45 mb-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full rounded-xl object-cover"
+                  ></img>
+                </div>
+                <h1
+                  key={item.name}
+                  className="text-lg font-semibold mb-1 dark:text-zinc-100"
+                >
                   {item.name}
                 </h1>
-                <p className="text-gray-600 mb-4">{item.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <p className="text-sm dark:text-zinc-400 mb-6">
+                  {item.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {item.technologies.map((tech) => (
-                    <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded">
+                    <span className="text-[10px] border border-slate-700 px-1 py-0.5 rounded-md dark:text-zinc-300 font-bold bg-slate-700">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-2 mt-auto">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {item.live && (
-                    <button className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
-                      Website
+                    <button className="btn-unlocked">
+                      <FiGlobe size={iconSize} />
+                      <span>Website</span>
                     </button>
                   )}
                   {item.repo ? (
-                    <button className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
-                      Source
+                    <button className="btn-unlocked">
+                      <FiGithub size={iconSize} />
+                      <span>Source</span>
                     </button>
                   ) : (
-                    <button
-                      className="bg-gray-500 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed"
-                      disabled
-                    >
-                      Source
+                    <button className="btn-locked" disabled>
+                      <FiGithub size={iconSize} />
+                      <span>Source</span>
                     </button>
                   )}
                 </div>

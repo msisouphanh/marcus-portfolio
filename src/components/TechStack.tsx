@@ -6,6 +6,8 @@ import {
   SiReact,
   SiTypescript,
   SiUnity,
+  SiPython,
+  SiMysql,
 } from "react-icons/si";
 
 export const techStack = [
@@ -15,21 +17,35 @@ export const techStack = [
   { name: "Tailwind", Icon: SiTailwindcss },
   { name: "React", Icon: SiReact },
   { name: "TypeScript", Icon: SiTypescript },
+  { name: "Python", Icon: SiPython },
   { name: "Unity", Icon: SiUnity },
+  { name: "SQL", Icon: SiMysql },
 ];
 
 function TechStack() {
   return (
-    <div className="w-full mt-8">
-      <div className="grid grid-cols-4 md:grid-cols-7 gap-2 max-w-2xl mx-auto px-4">
+    <div className="w-full mt-18">
+      <div className="flex max-w-2xl mx-auto px-4 mb-4">
+        <h1 className="font-semibold text-2xl dark:text-zinc-100">
+          Technologies
+        </h1>
+      </div>
+      <div className="grid grid-cols-6 md:grid-cols-7 gap-2 max-w-2xl mx-auto px-4">
         {techStack.map(({ name, Icon }) => (
-          <figure
-            key={name}
-            className="border-2 rounded-lg shadow-md flex flex-col items-center justify-center w-full aspect-square"
+          <div
+            className="transition-all duration-300 ease-out
+                hover:-translate-y-1 hover:shadow-lg dark:text-zinc-700 dark:bg-zinc-900/30"
           >
-            <Icon size={32} className="mb-1" />
-            <figcaption className="mt-0.5 text-xs">{name}</figcaption>
-          </figure>
+            <figure
+              key={name}
+              className="border rounded-lg shadow-md flex flex-col items-center justify-center w-full aspect-square"
+            >
+              <Icon size={28} className="mb-1 dark:text-zinc-100" />
+              <figcaption className="mt-0.5 text-xs dark:text-gray-300">
+                {name}
+              </figcaption>
+            </figure>
+          </div>
         ))}
       </div>
     </div>

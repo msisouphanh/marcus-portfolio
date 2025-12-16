@@ -1,18 +1,18 @@
 [
   {
     "name": "E-Portfolio",
-    "description": "Personal portfolio website",
-    "technologies": ["React", "HTML", "Tailwind CSS"],
+    "description": "A personal e-portfolio website designed to showcase my projects, skills, and experience.",
+    "technologies": ["React", "HTML", "Tailwind CSS", "TypeScript"],
     "live": "test",
     "repo": "https://github.com/msisouphanh/portfolio-website",
-    "image": "no image path rn"
+    "image": "/project_images/eportfolio.jpg"
   },
   {
     "name": "Top Down RPG",
-    "description": "A top down rpg game",
+    "description": "A work in progress 2D Top Down RPG with a focus on combat, and gear progression.",
     "technologies": ["C#", "Unity"],
     "live": null,
     "repo": null,
-    "image": "no image path rn"
+    "image": "/project_images/TopDownRPG.jpg"
   }
 ]

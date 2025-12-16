@@ -8,7 +8,7 @@ import Projects from "./components/Projects.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <main>
+    <main className="font-sans">
       <Nav />
       <Bio />
       <TechStack />

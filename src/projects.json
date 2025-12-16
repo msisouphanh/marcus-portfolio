@@ -22,5 +22,13 @@
     "live": null,
     "repo": "https://github.com/msisouphanh/flappy-bird-clone",
     "image": "/project_images/flappy-bird-clone.jpg"
+  },
+  {
+    "name": "Weather App",
+    "description": "A Weather App utilizing the Open Weather Map API.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "live": null,
+    "repo": "https://github.com/msisouphanh/Weather-App",
+    "image": "/project_images/weatherapp.jpg"
   }
 ]

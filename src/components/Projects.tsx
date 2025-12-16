@@ -75,13 +75,19 @@ function Projects({ showViewMore }: Props) {
                 </div>
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {item.live && (
-                    <button className="btn-unlocked">
+                    <button
+                      onClick={() => window.open(item.live!, "_blank")}
+                      className="btn-unlocked"
+                    >
                       <FiGlobe size={iconSize} />
                       <span>Website</span>
                     </button>
                   )}
                   {item.repo ? (
-                    <button className="btn-unlocked">
+                    <button
+                      onClick={() => window.open(item.repo!, "_blank")}
+                      className="btn-unlocked"
+                    >
                       <FiGithub size={iconSize} />
                       <span>Source</span>
                     </button>

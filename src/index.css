@@ -9,7 +9,7 @@
 
 @layer components {
   .btn-unlocked {
-    @apply text-xs text-black dark:bg-zinc-200 px-2.5 py-1.5 rounded hover:dark:bg-zinc-300 flex items-center gap-2;
+    @apply text-xs text-black dark:bg-zinc-200 px-2.5 py-1.5 rounded hover:dark:bg-zinc-300 flex items-center gap-2 cursor-pointer;
   }
 
   .btn-locked {

@@ -19,8 +19,8 @@ const iconSize = 14 as number;
 
 function Projects({ showViewMore }: Props) {
   const projectsData = showViewMore
-    ? (rawProjectsData as Project[])
-    : (rawProjectsData.slice(0, 2) as Project[]);
+    ? (rawProjectsData.slice(0, 2) as Project[])
+    : (rawProjectsData as Project[]);
 
   return (
     <>

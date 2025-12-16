@@ -14,5 +14,13 @@
     "live": null,
     "repo": null,
     "image": "/project_images/TopDownRPG.jpg"
+  },
+  {
+    "name": "Flappy Bird Clone",
+    "description": "A Flappy Bird Clone made using Python, and the Pygame library.",
+    "technologies": ["Python", "Pygame"],
+    "live": null,
+    "repo": "https://github.com/msisouphanh/flappy-bird-clone",
+    "image": "/project_images/flappy-bird-clone.jpg"
   }
 ]

@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+
 function NavigationBar() {
   return (
     <>
       <nav className="w-full">
-        <ul className="flex text-md space-x-9 mx-auto px-4 max-w-2xl mt-8 mb-16 items-center ">
+        <ul className="flex text-md space-x-9 mx-auto px-4 max-w-2xl mt-8 mb-16 items-center">
           <li>
-            <a className="navigation-bar" href="#">
+            <Link to="/" className="navigation-bar">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="navigation-bar" href="#">
+            <Link to="/projects" className="navigation-bar">
               Projects
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

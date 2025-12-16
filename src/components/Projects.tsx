@@ -1,5 +1,6 @@
 import { FiGlobe, FiGithub } from "react-icons/fi";
 import rawProjectsData from "../projects.json";
+import { Link } from "react-router-dom";
 
 interface Project {
   name: string;
@@ -10,10 +11,17 @@ interface Project {
   image: string;
 }
 
-const iconSize = 14 as number;
-const projectsData = rawProjectsData.slice(0, 2) as Project[];
+interface Props {
+  showViewMore: boolean;
+}
 
-function Projects() {
+const iconSize = 14 as number;
+
+function Projects({ showViewMore }: Props) {
+  const projectsData = showViewMore
+    ? (rawProjectsData as Project[])
+    : (rawProjectsData.slice(0, 2) as Project[]);
+
   return (
     <>
       <div className="w-full">
@@ -22,9 +30,19 @@ function Projects() {
             <h1 className="font-semibold text-2xl dark:text-zinc-100">
               Projects
             </h1>
-            <a className="flex items-center">
-              <span className="text-md pt-2 dark:text-zinc-300">View More</span>
-            </a>
+            {showViewMore && (
+              <div className="flex items-center">
+                <span className="text-md pt-2 dark:text-zinc-300">
+                  <Link
+                    to="/projects"
+                    className="navigation-bar"
+                    aria-label="View More Projects"
+                  >
+                    View More
+                  </Link>
+                </span>
+              </div>
+            )}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             {projectsData.map((item) => (

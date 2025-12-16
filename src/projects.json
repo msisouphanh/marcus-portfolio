@@ -9,7 +9,7 @@
   },
   {
     "name": "Top Down RPG",
-    "description": "A work in progress 2D Top Down RPG with a focus on combat, and gear progression.",
+    "description": "A 2D Top Down RPG with a focus on combat, and gear progression (Work in Progress).",
     "technologies": ["C#", "Unity"],
     "live": null,
     "repo": null,

@@ -22,8 +22,26 @@ function Bio() {
               skills with React and Tailwind CSS
             </p>
             <div className="flex mt-3 dark:text-zinc-200">
-              <FaLinkedin className="mr-4 " size={30} />
-              <FaGithub size={30} />
+              <a
+                href="https://www.linkedin.com/in/marcus-s-384602269/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin
+                  className="mr-4 transition-transform duration-200 ease-in-out hover:scale-125"
+                  size={30}
+                />
+              </a>
+              <a
+                href="https://github.com/msisouphanh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub
+                  className="transition-transform duration-200 ease-in-out hover:scale-125"
+                  size={30}
+                />
+              </a>
             </div>
           </div>
         </div>

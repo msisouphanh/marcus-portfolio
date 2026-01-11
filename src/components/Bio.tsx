@@ -8,7 +8,7 @@ function Bio() {
           <div className="mr-8 shrink-0">
             <img
               className="rounded-full w-34 h-34 mt-1.5"
-              src="profile.jpg"
+              src="https://msisouphanh.github.io/profile.jpg"
               alt="Image of User"
             ></img>
           </div>

@@ -5,15 +5,15 @@ import ProjectsPage from "./pages/ProjectPage.tsx";
 
 function App() {
   return (
-    <main className="font-sans">
-      <Nav />
-      <HashRouter>
+    <HashRouter>
+      <main className="font-sans">
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
-      </HashRouter>
-    </main>
+      </main>
+    </HashRouter>
   );
 }
 

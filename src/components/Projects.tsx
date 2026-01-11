@@ -52,7 +52,7 @@ function Projects({ showViewMore }: Props) {
               >
                 <div className="h-45 mb-4">
                   <img
-                    src={item.image}
+                    src={`https://msisouphanh.github.io/marcus-portfolio${item.image}`}
                     alt={item.name}
                     className="w-full h-full rounded-xl object-cover"
                   ></img>

@@ -1,6 +1,6 @@
-## E-Portfolio
+## Pokedex
 
-A personal e-portfolio website designed to showcase my projects, skills, and experience.
+A Pokedex website that utilizes the PokeAPI.
 
 ### Technologies
 - `React`

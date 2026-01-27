@@ -1,7 +1,7 @@
 [
   {
     "name": "News Announcement API",
-    "description": "Backend API powering news, announcements, and developer updates for my work in progress game.",
+    "description": "Backend API for news, announcements, and developer updates for my work in progress game.",
     "technologies": ["Node.js", "Express.js", "JavsScript"],
     "live": null,
     "repo": "https://github.com/msisouphanh/news-announcements-website",

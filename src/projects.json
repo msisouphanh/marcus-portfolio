@@ -1,9 +1,17 @@
 [
   {
+    "name": "News Announcement API",
+    "description": "Backend API powering news, announcements, and developer updates for my work in progress game.",
+    "technologies": ["Node.js", "Express.js", "JavsScript"],
+    "live": null,
+    "repo": "https://github.com/msisouphanh/news-announcements-website",
+    "image": "/project_images/pokedex.jpg"
+  },
+  {
     "name": "Pokedex",
     "description": "A Pokedex website that utilizes PokeAPI.",
     "technologies": ["React", "HTML", "Tailwind CSS", "TypeScript"],
-    "live": null,
+    "live": "https://msisouphanh.github.io/pokedex/",
     "repo": "https://github.com/msisouphanh/pokedex",
     "image": "/project_images/pokedex.jpg"
   },

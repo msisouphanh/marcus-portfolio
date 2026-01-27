@@ -5,7 +5,7 @@
     "technologies": ["Node.js", "Express.js", "JavsScript"],
     "live": null,
     "repo": "https://github.com/msisouphanh/news-announcements-website",
-    "image": "/project_images/pokedex.jpg"
+    "image": "/project_images/announcement.jpg"
   },
   {
     "name": "Pokedex",
